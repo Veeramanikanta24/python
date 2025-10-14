@@ -1,0 +1,3 @@
+text=input("enter a string")
+char_comp_array={char  for char in text}
+print("list of comprehension array",char_comp_array)
