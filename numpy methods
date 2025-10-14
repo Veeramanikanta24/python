@@ -1,0 +1,6 @@
+import numpy as np
+arr = np.array([5, 2, 9, 7, 2, 8, 1, 9, 4]) 
+print("nmax value is",np.max(arr))
+print("min value is",np.min(arr))
+print("index of max value is",np.argmax(arr))
+print("index of min value is",np.argmin(arr))
