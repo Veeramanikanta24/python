@@ -1,0 +1,24 @@
+import numpy as np
+arr3 = np.array([1, 2, 3, 4])
+result = np.all(arr3)
+print("\nNone of the elements are zero:", result)
+arr4 = np.array([1, 0, 3, 4])
+print("None of the elements are zero:", np.all(arr4))
+
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = np.array([5, 6, 7, 8])
+
+print("\nElement-wise Comparison between arr1 and arr2:")
+print("Greater: ", np.greater(arr1, arr2))
+print("Greater_equal: ", np.greater_equal(arr1, arr2))
+print("Less: ", np.less(arr1, arr2))
+print("Less_equal: ", np.less_equal(arr1, arr2))
+print("Equal: ", np.equal(arr1, arr2))
+
+arr5 = np.array([1.0, 2.000001, 3.0])
+arr6 = np.array([1.0, 2.0, 3.0])
+print("\nEqual within a tolerance:", np.allclose(arr5, arr6))
+sum_arr = np.add(arr1, arr2)
+print("\nAddition of arr1 and arr2:", sum_arr)
+print("Sum array as list:", sum_arr.tolist())
