@@ -1,0 +1,25 @@
+def can_tomu_win(N, K, A):
+    motu = [A[i] for i in range(0, N, 2)]
+    tomu = [A[i] for i in range(1, N, 2)]
+    
+    motu.sort(reverse=True)
+    tomu.sort()
+    
+    swaps = min(K, min(len(motu), len(tomu)))
+    
+    for i in range(swaps):
+        if motu[i] > tomu[i]:
+            motu[i], tomu[i] = tomu[i], motu[i]
+        else:
+            break
+    
+    if sum(tomu) > sum(motu):
+        return "YES"
+    else:
+        return "NO"
+
+T = int(input().strip())
+for _ in range(T):
+    N, K = map(int, input().split())
+    A = list(map(int, input().split()))
+    print(can_tomu_win(N, K, A))
