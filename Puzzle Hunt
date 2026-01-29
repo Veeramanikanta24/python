@@ -1,0 +1,7 @@
+N = int(input().strip())
+
+# Check eligibility
+if 6 <= N <= 8:
+    print("Yes")
+else:
+    print("No")
