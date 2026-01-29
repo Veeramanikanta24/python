@@ -1,0 +1,13 @@
+from itertools import groupby
+
+# Read input
+s = input().strip()
+
+# Apply groupby
+result = []
+for key, group in groupby(s):
+    count = len(list(group))   # number of times the digit repeats
+    result.append(f"({count}, {key})")
+
+# Print output with spaces
+print(" ".join(result))
