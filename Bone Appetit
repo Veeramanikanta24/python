@@ -1,0 +1,9 @@
+# Input
+N, M = map(int, input().split())
+X, Y = map(int, input().split())
+
+# Calculate total treats
+total_treats = N * X + M * Y
+
+# Output
+print(total_treats)
